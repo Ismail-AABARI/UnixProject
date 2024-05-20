@@ -1,0 +1,2 @@
+HitsPerStatusCode = 
+COUNTROWS(LogsV1)

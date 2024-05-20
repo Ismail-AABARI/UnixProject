@@ -1,0 +1,5 @@
+CountNotFoundURLs = 
+CALCULATE(
+    COUNTROWS(LogsV1),
+    LogsV1[Status] = "404"
+)

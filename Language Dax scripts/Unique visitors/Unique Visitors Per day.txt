@@ -1,0 +1,5 @@
+UniqueVisitorsPerDay = 
+CALCULATE(
+    DISTINCTCOUNT(LogsV1[UniqueVisitKey]),
+    ALLEXCEPT(LogsV1, LogsV1[Date])
+)

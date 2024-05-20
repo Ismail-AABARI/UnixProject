@@ -1,0 +1,10 @@
+StatusCategory = 
+VAR StatusCode = LogsV1[Status]
+RETURN
+SWITCH(
+    TRUE(),
+    LEFT(StatusCode, 1) = "2", "2xx Success",
+    LEFT(StatusCode, 1) = "3", "3xx Redirection",
+    LEFT(StatusCode, 1) = "4", "4xx Client Errors",
+    "Other"
+)

@@ -1,0 +1,5 @@
+Status redirection = 
+CALCULATE(
+    COUNT(apache[Status]),
+    apache[Status] >= 300 && apache[Status] <= 399
+)

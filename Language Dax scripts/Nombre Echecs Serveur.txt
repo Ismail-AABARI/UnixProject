@@ -1,0 +1,5 @@
+Nombre Echecs Serveur = 
+CALCULATE(
+    COUNT(apache[Status]),
+    apache[Status] > 500
+)

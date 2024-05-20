@@ -1,0 +1,5 @@
+UniqueVisitorsPerDayPerEachIP = 
+CALCULATE(
+    DISTINCTCOUNT(LogsV1[UniqueVisitKey]),
+    ALLEXCEPT(LogsV1, LogsV1[Date], LogsV1[IP adress])
+)

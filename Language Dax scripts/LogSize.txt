@@ -1,0 +1,7 @@
+Log size = 
+VAR TotalSize = DIVIDE(
+    SUMX(apache, CONVERT(apache[Size], DOUBLE)),  // Somme des valeurs converties en décimaux
+    1000000000
+)
+RETURN
+    FORMAT(TotalSize, "0.00") & " Mo"

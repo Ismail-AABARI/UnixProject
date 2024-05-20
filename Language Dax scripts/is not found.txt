@@ -1,0 +1,2 @@
+IsNotFound = 
+IF(LogsV1[Status] = "404", TRUE(), FALSE())

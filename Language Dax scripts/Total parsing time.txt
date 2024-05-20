@@ -1,0 +1,5 @@
+TotalParsingTime = 
+VAR StartTime = MIN('secure_log'[time])  // Timestamp du début du parsing (première entrée)
+VAR EndTime = MAX('secure_log'[time])    // Timestamp de la fin du parsing (dernière entrée)
+RETURN
+    SUMX('secure_log', DATEDIFF(StartTime, EndTime, SECOND))

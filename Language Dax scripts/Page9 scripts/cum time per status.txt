@@ -1,0 +1,2 @@
+CumTimePerStatusCode = 
+SUM(LogsV1[Temps])

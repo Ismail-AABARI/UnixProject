@@ -1,0 +1,4 @@
+UniqueVisitKey = 
+LogsV1[IP adress] & "-" & 
+FORMAT(LogsV1[Date], "YYYYMMDD") & "-" & 
+LogsV1[Navigateur]

@@ -1,0 +1,5 @@
+Nombre_Réussites = 
+CALCULATE(
+    COUNT(apache[Status]),
+    apache[Status] >= 200 && apache[Status] <= 299
+)

@@ -1,0 +1,5 @@
+Nombre Echecs = 
+CALCULATE(
+    COUNT(apache[Status]),
+    apache[Status] > 400 
+)

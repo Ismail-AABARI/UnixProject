@@ -1,0 +1,8 @@
+NotFound = 
+CALCULATE(
+    COUNTROWS(apache),
+    FILTER(
+        apache,
+        ISBLANK(apache[Status])
+    )
+)

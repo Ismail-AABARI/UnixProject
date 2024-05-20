@@ -1,0 +1,2 @@
+AvgTimePerStatusCode = 
+AVERAGE(LogsV1[Temps])
